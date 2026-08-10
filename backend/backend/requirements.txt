@@ -1,0 +1,17 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# ML / inference
+torch
+torchvision
+transformers==4.44.2
+pillow==10.4.0
+numpy==1.26.4
+
+# video frame extraction
+opencv-python-headless==4.10.0.84
+
+# audio loading/resampling
+librosa==0.10.2.post1
+soundfile==0.12.1

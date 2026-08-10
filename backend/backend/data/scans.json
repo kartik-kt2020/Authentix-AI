@@ -1,0 +1,44 @@
+[
+  {
+    "id": "8e6df484798546d39ec257883492e27c",
+    "filename": "wallpaperMinecraft.webp",
+    "mimeType": "image/webp",
+    "kind": "image",
+    "verdict": "fake",
+    "fakeProbability": 0.5883,
+    "confidencePercent": 58.8,
+    "fileUrl": "/uploads/8e6df484798546d39ec257883492e27c.webp",
+    "createdAt": 1786366513.4538534,
+    "details": [
+      {
+        "label": "Deepfake",
+        "score": 0.5883416533470154
+      },
+      {
+        "label": "Realism",
+        "score": 0.39866331219673157
+      }
+    ]
+  },
+  {
+    "id": "9b06807c79924e8ebb49e2e1532218ab",
+    "filename": "Screenshot 2026-08-07 212151.png",
+    "mimeType": "image/png",
+    "kind": "image",
+    "verdict": "fake",
+    "fakeProbability": 0.5326,
+    "confidencePercent": 53.3,
+    "fileUrl": "/uploads/9b06807c79924e8ebb49e2e1532218ab.png",
+    "createdAt": 1786147993.2170875,
+    "details": [
+      {
+        "label": "Deepfake",
+        "score": 0.5326173305511475
+      },
+      {
+        "label": "Realism",
+        "score": 0.4366935193538666
+      }
+    ]
+  }
+]
