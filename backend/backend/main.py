@@ -1,5 +1,5 @@
 """
-DeepShield AI backend.
+Authentix AI backend.
 
 Run locally:
     pip install -r requirements.txt
@@ -26,14 +26,14 @@ import detectors
 import storage
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("deepshield.api")
+logger = logging.getLogger("Authentix.api")
 
 UPLOAD_DIR = Path(__file__).parent / "uploads"
 UPLOAD_DIR.mkdir(exist_ok=True)
 
 MAX_UPLOAD_BYTES = 200 * 1024 * 1024  # 200 MB
 
-app = FastAPI(title="DeepShield AI API", version="1.0.0")
+app = FastAPI(title="Authentix AI API", version="1.0.0")
 
 # Vite's default dev server ports. Add your deployed frontend origin too.
 app.add_middleware(

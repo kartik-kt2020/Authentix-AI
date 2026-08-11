@@ -125,7 +125,7 @@ function App() {
     try {
       if (navigator.share) {
         await navigator.share({
-          title: "DeepShield AI",
+          title: "Authentix AI",
           text: "AI-powered deepfake detection",
           url: window.location.href,
         });
@@ -159,7 +159,7 @@ function App() {
           <div className="brand">
             <div className="brandMark">✦</div>
             <div>
-              <div className="brandName">DeepShield</div>
+              <div className="brandName">Authentix</div>
               <div className="brandSub">AI Verification</div>
             </div>
           </div>
@@ -242,7 +242,7 @@ function App() {
       <main className="main">
         <header className="topbar">
           <div>
-            <div className="eyebrow">DEEPSHIELD AI</div>
+            <div className="eyebrow">Authentix AI</div>
             <h1>
               {activeView === "analytics"
                 ? "Analytics"
@@ -447,7 +447,7 @@ function App() {
 
             <div className="securityNote">
               <span>⌁</span>
-              Files are processed locally through your configured DeepShield API. Results are estimates, not proof of authenticity.
+              Files are processed locally through your configured Authentix API. Results are estimates, not proof of authenticity.
             </div>
           </>
         )}

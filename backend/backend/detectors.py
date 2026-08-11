@@ -1,5 +1,5 @@
 """
-Detection backends for DeepShield AI.
+Detection backends for Authentix AI.
 
 Loads three pretrained Hugging Face models the first time they're needed
 (lazy loading, so the API boots fast) and exposes a single
@@ -23,7 +23,7 @@ from typing import Literal
 import numpy as np
 from PIL import Image
 
-logger = logging.getLogger("deepshield.detectors")
+logger = logging.getLogger("Authentix.detectors")
 
 IMAGE_MODEL_ID = "prithivMLmods/Deep-Fake-Detector-v2-Model"
 AUDIO_MODEL_ID = "MelodyMachine/Deepfake-audio-detection-V2"

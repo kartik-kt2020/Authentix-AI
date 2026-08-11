@@ -1,6 +1,6 @@
-# DeepShield AI — Backend
+# Authentix AI — Backend
 
-FastAPI backend for the DeepShield AI frontend. Accepts an uploaded
+FastAPI backend for the Authentix AI frontend. Accepts an uploaded
 image, video, or audio file and returns a real/fake verdict using
 pretrained Hugging Face models (no training required).
 
@@ -72,7 +72,7 @@ CORS is pre-configured for Vite's default dev server
 ## Notes & honest limitations
 
 - These are third-party open-source models, not a proprietary
-  "DeepShield" model — accuracy varies by dataset and won't match a
+  "Authentix" model — accuracy varies by dataset and won't match a
   production-grade commercial detector. Treat scores as a probabilistic
   signal, not ground truth.
 - Storage is a flat JSON file (`data/scans.json`) — fine for local dev,
