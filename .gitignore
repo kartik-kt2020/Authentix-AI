@@ -36,3 +36,6 @@ backend/.venv/
 .env
 .env.*
 !.env.example
+
+# Old nested frontend project
+Project/

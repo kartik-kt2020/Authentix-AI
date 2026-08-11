@@ -1,5 +1,89 @@
 [
   {
+    "id": "7f1f9a0e1056407284dad041e81dc95b",
+    "filename": "WIN_20260524_16_24_36_Pro.jpg",
+    "mimeType": "image/jpeg",
+    "kind": "image",
+    "verdict": "fake",
+    "fakeProbability": 0.6621,
+    "confidencePercent": 66.2,
+    "fileUrl": "/uploads/7f1f9a0e1056407284dad041e81dc95b.jpg",
+    "createdAt": 1786421817.2481658,
+    "details": [
+      {
+        "label": "Deepfake",
+        "score": 0.6620699763298035
+      },
+      {
+        "label": "Realism",
+        "score": 0.31527748703956604
+      }
+    ]
+  },
+  {
+    "id": "d06bad4e9c224cda87b063dffa7c0aca",
+    "filename": "WIN_20260524_16_24_30_Pro.jpg",
+    "mimeType": "image/jpeg",
+    "kind": "image",
+    "verdict": "fake",
+    "fakeProbability": 0.7435,
+    "confidencePercent": 74.3,
+    "fileUrl": "/uploads/d06bad4e9c224cda87b063dffa7c0aca.jpg",
+    "createdAt": 1786383439.298178,
+    "details": [
+      {
+        "label": "Deepfake",
+        "score": 0.7434846758842468
+      },
+      {
+        "label": "Realism",
+        "score": 0.2687843143939972
+      }
+    ]
+  },
+  {
+    "id": "b56de5bdb90b4cefab61a590c175885e",
+    "filename": "WIN_20260810_22_46_39_Pro.jpg",
+    "mimeType": "image/jpeg",
+    "kind": "image",
+    "verdict": "fake",
+    "fakeProbability": 0.747,
+    "confidencePercent": 74.7,
+    "fileUrl": "/uploads/b56de5bdb90b4cefab61a590c175885e.jpg",
+    "createdAt": 1786382228.197366,
+    "details": [
+      {
+        "label": "Deepfake",
+        "score": 0.7469955682754517
+      },
+      {
+        "label": "Realism",
+        "score": 0.2743660509586334
+      }
+    ]
+  },
+  {
+    "id": "776873735a1c445cafcd14b241bbb1b5",
+    "filename": "PyarTum [Music Video]  Pyar N' Stuff  Nanku  Warner Music India.mp3",
+    "mimeType": "audio/mpeg",
+    "kind": "audio",
+    "verdict": "fake",
+    "fakeProbability": 1.0,
+    "confidencePercent": 100.0,
+    "fileUrl": "/uploads/776873735a1c445cafcd14b241bbb1b5.mp3",
+    "createdAt": 1786382105.7550778,
+    "details": [
+      {
+        "score": 0.9999762773513794,
+        "label": "fake"
+      },
+      {
+        "score": 2.372455310251098e-05,
+        "label": "real"
+      }
+    ]
+  },
+  {
     "id": "8e6df484798546d39ec257883492e27c",
     "filename": "wallpaperMinecraft.webp",
     "mimeType": "image/webp",

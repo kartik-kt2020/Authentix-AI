@@ -60,28 +60,23 @@ REAL_LABEL_HINTS = ("real", "bonafide", "authentic", "0", "0_real")
 
 def _fake_probability_from_scores(scores: list[dict]) -> float:
     """
-    `scores` is HF pipeline output: [{"label": ..., "score": ...}, ...]
-    Returns probability the content is FAKE, in [0, 1].
+    Returns the model's probability that the image is FAKE.
+
+    For prithivMLmods/Deep-Fake-Detector-v2-Model:
+        Realism  = class 0
+        Deepfake = class 1
     """
-    fake_score = None
-    real_score = None
+
     for entry in scores:
         label = str(entry["label"]).lower()
-        if any(hint in label for hint in FAKE_LABEL_HINTS):
-            fake_score = entry["score"]
-        elif any(hint in label for hint in REAL_LABEL_HINTS):
-            real_score = entry["score"]
 
-    if fake_score is not None:
-        return float(fake_score)
-    if real_score is not None:
-        return float(1.0 - real_score)
+        if label == "deepfake":
+            return float(entry["score"])
 
-    # Fallback: unknown label scheme, just take whichever score is highest
-    # and treat "the model's top label" as authoritative with a neutral 0.5
-    # baseline. This should rarely trigger given the two models above.
-    top = max(scores, key=lambda e: e["score"])
-    logger.warning("Unrecognized label scheme, top label=%s", top["label"])
+        if label == "realism":
+            return float(1.0 - entry["score"])
+
+    logger.warning("Unexpected model labels: %s", scores)
     return 0.5
 
 
@@ -93,7 +88,11 @@ def analyze_image_bytes(data: bytes) -> dict:
     pipe = _get_image_pipeline()
     image = Image.open(io.BytesIO(data)).convert("RGB")
     scores = pipe(image)
+
+    print("MODEL OUTPUT:", scores)
+
     fake_prob = _fake_probability_from_scores(scores)
+
     return {
         "fakeProbability": fake_prob,
         "raw": scores,
